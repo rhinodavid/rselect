@@ -1,0 +1,19 @@
+{
+  "name": "rselect",
+  "version": "1.0.0",
+  "description": "Finds the ith element in an array",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rhinodavid/rselect.git"
+  },
+  "author": "David Walsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rhinodavid/rselect/issues"
+  },
+  "homepage": "https://github.com/rhinodavid/rselect#readme"
+}
