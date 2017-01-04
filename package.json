@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/rhinodavid/rselect/issues"
   },
-  "homepage": "https://github.com/rhinodavid/rselect#readme"
+  "eslintConfig": {
+    "extends": "airbnb",
+    "env": {
+      "mocha": true,
+      "node": true,
+      "browser": true
+    }
+  },
+  "homepage": "https://github.com/rhinodavid/rselect#readme",
+  "dependencies": {
+    "chai": "^3.5.0"
+  }
 }
