@@ -33,6 +33,17 @@ const partitionAroundPivot = function partitionAroundPivot(arr, start, end, pivo
   return i - 1;
 };
 
+/**
+ * Uses quickselect to find the item of ith significance in an array.
+ * @param  {Array} arr The array to search
+ * @param  {Integer} ith The order significance of to find
+ * @return {Number}     The item of ith significance
+ * @example
+ * const arr = [100, 1, 2];
+ * rselect(arr, 1); // returns 1
+ * rselect(arr, 3); // returns 100
+ * rselect(arr, 4); // throws error -- ith must be between 1 and arr.length - 1
+ */
 const rselect = function rselect(arr, ith) {
   if (!Array.isArray(arr)) {
     throw new Error('First argument must be an Array');
