@@ -34,6 +34,9 @@ const partitionAroundPivot = function partitionAroundPivot(arr, start, end, pivo
 };
 
 const rselect = function rselect(arr, ith) {
+  if (!Array.isArray(arr)) {
+    throw new Error('First argument must be an Array');
+  }
   if (Math.floor(ith) !== ith) {
     throw new Error('ith must be an integer');
   }

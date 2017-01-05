@@ -20,6 +20,10 @@ describe('Rselect', () => {
     expect(rselect([5, 4, 1, 3, 2], 4)).to.equal(4);
   });
 
+  it('Should throw an error if arr is not an Array', () => {
+    expect(rselect.bind(null, { a: 1, b: 2 }, 2)).to.throw(/must be an array/i);
+  });
+
   it('Should throw an error if ith is not an integer', () => {
     expect(rselect.bind(null, [3, 2, 1], 1.5)).to.throw(/integer/);
   });
